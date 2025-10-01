@@ -66,6 +66,19 @@ async def main():
         user_msg = input("Enter a message: ")
         inputs.append({"content": user_msg, "role": "user"})
         agent = result.current_agent
+        print("=============================")
+        print("final output", result.final_output)
+        print("=============================")
+        print("Last agent", result.last_agent)
+        print("=============================")
+        print("To input list", result.to_input_list())
+        print("=============================")
+        print("Raw response", result.raw_responses)
+        print("=============================")
+        print("User Input", result.input)
+        print("=============================")
+        print("New Items", result.new_items)
+        print("=============================")
 
 
 if __name__ == "__main__":
