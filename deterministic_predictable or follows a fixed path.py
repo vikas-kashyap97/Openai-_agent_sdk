@@ -49,7 +49,7 @@ async def main():
             story_outline_agent,
             input_prompt,
         )
-        print("Outline generated")
+        print("Outline generated", outline_result.final_output)
 
         # 2. Check the outline
         outline_checker_result = await Runner.run(
