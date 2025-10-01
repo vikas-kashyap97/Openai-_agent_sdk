@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+# This will check the state of the tracing
+set_tracing = True
+print(f"Tracing is disabled? {set_tracing}")
 
 
 client = AsyncOpenAI()
